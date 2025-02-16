@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+````markdown:README.md
+# OKR Management System
 
-## Getting Started
+Sistema de gerenciamento de OKRs (Objectives and Key Results) desenvolvido para facilitar o acompanhamento de objetivos e resultados-chave.
 
-First, run the development server:
+## 🚀 Funcionalidades
+
+- Criação e gerenciamento de objetivos
+- Adição de resultados-chave com entregas mensuráveis
+- Cálculo automático de progresso baseado nas entregas
+- Filtragem de objetivos por data
+- Edição e exclusão de objetivos e resultados-chave
+- Visualização clara do progresso através de barras de progresso
+- Interface responsiva e intuitiva
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js 13+
+- TypeScript
+- SQLite
+- Bootstrap 5
+- React
+
+## ⚙️ Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/EdmilsonMedeiros/okr-management.git
+cd okr-management
+````
+
+2. Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Instale os tipos do Bootstrap:
+
+```bash
+npm install --save-dev @types/bootstrap
+# ou
+yarn add -D @types/bootstrap
+```
+
+4. Execute o projeto:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_O sistema estará disponível em `http://localhost:3000`_
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+_a api estará disponível em `http://localhost:3001/api/#...`_
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_O banco de dados estará disponível dentro do próprio projeto em okr.db_
